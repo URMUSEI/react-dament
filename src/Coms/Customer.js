@@ -4,9 +4,29 @@ class Customer extends React.Component {
     render() {
         return (
             <div>
-                <h2>NO</h2>
-                <p>mail</p>
-                <p>pwd</p>
+                <CustomerProfile no={this.props.no} id={this.props.id} />
+                <CustomerInfo no={this.props.no} mail={this.props.mail} pwd={this.props.pwd} /> 
+            </div>
+        )
+    }
+}
+
+class CustomerProfile extends React.Component{
+    render() {
+        return (
+            <div>
+                <h2>{this.props.no}({this.props.id})</h2>
+            </div>
+        )
+    }
+}
+class CustomerInfo extends React.Component {
+    render() {
+        return (
+            <div>
+                <p>{this.props.no}</p>
+                <p>{this.props.mail}</p>
+                <p>{this.props.pwd}</p>
             </div>
         )
     }
