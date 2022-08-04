@@ -1,5 +1,5 @@
 ## Management System
-DATIME 관리 시스템(Management System)입니다.
+DAMTIME 관리 시스템(Management System)입니다.
 
 # Getting Started with Create React App
 
