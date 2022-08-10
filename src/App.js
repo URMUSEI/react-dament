@@ -7,8 +7,7 @@ import { TableHead } from '@mui/material';
 import { TableBody } from '@mui/material';
 import { TableRow } from '@mui/material';
 import { TableCell } from '@mui/material';
-import { alpha } from '@mui/material/styles';
-// import { makeStyles } from '@mui/styles';
+// import {  } from 
 
 const styles = theme => ({
     root: {
@@ -48,10 +47,10 @@ const customers = [{
 
 class App extends Component {
     render() {
-        const { classes } = this.props;
+    
         return(
-            <Paper className={classes.root}>
-            <Table className={classes.table}>
+            <Paper>
+            <Table>
                 <TableHead>
                     <TableCell>번호</TableCell>
                     <TableCell>이름</TableCell>
@@ -68,4 +67,4 @@ class App extends Component {
         }
     }
 
-export default alpha(styles)(App);
+export default App;
