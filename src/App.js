@@ -22,27 +22,25 @@ import { TableCell } from '@mui/material';
 
 const customers = [{
     'id':1,
-    'image': 'https://paceimg.com/64/64/any',
-    'name': '나동빈',
-    'birthday': '961222',
-    'gender': '남자',
-    'job': '대학생'
+    'mail': 'n@gmail.com',
+    'pwd': '12345678',
+    'birthday': '000000',
+    'gender': '남',
+    'btn': <button>b</button>
 },
 {
-    'id':1,
-    'image': 'https://paceimg.com/64/64/any',
-    'name': '나동빈',
-    'birthday': '961222',
-    'gender': '남자',
-    'job': '대학생'
+    'id':2,
+    'mail': 'm@naver.com',
+    'pwd': '12345678',
+    'birthday': '000000',
+    'gender': '남'
 },
 {
-    'id':1,
-    'image': 'https://paceimg.com/64/64/any',
-    'name': '나동빈',
-    'birthday': '961222',
-    'gender': '남자',
-    'job': '대학생'
+    'id':3,
+    'mail': 'm@gmail.com',
+    'pwd': '12345678',
+    'birthday': '000000',
+    'gender': '여'
 }]
 
 class App extends Component {
@@ -53,13 +51,15 @@ class App extends Component {
             <Table>
                 <TableHead>
                     <TableCell>번호</TableCell>
-                    <TableCell>이름</TableCell>
+                    <TableCell>메일</TableCell>
+                    <TableCell>비밀번호</TableCell>
                     <TableCell>생년월일</TableCell>
                     <TableCell>성별</TableCell>
-                    <TableCell>직업</TableCell>
+                    
+                    <TableCell>유저 관리</TableCell>
                 </TableHead>
                 <TableBody>
-                {customers.map(c=>{return(<Customer key={c.id} id={c.id} image={c.image} name={c.name} birthday={c.birthday} gender={c.gender} job={c.job} />)})}
+                {customers.map(c=>{return(<Customer key={c.id} id={c.id} mail={c.mail} pwd={c.pwd} gender={c.gender} birthday={c.birthday} btn={c.btn}/>)})}
                 </TableBody>
             </Table>
             </Paper>
